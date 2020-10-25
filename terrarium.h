@@ -17,15 +17,15 @@ namespace terrarium
 				SWITCH_4 = 6
 			};
 
-		    enum Knob
-		    {
-        		KNOB_1 = 0,
-		        KNOB_2 = 2,
-	        	KNOB_3 = 4,
-        		KNOB_4 = 1,
-		        KNOB_5 = 3,
-        		KNOB_6 = 5
-    };
+			enum Knob
+			{
+				KNOB_1 = 0,
+				KNOB_2 = 2,
+				KNOB_3 = 4,
+				KNOB_4 = 1,
+				KNOB_5 = 3,
+				KNOB_6 = 5
+			};
 
 	};
 }
