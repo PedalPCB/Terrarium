@@ -26,6 +26,11 @@ namespace terrarium
 				KNOB_5 = 3,
 				KNOB_6 = 5
 			};
-
+			
+			enum LED
+			{
+				LED_1 = 22,
+				LED_2 = 23
+			};
 	};
 }
