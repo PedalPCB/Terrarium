@@ -25,5 +25,5 @@ press the reset sequence on the Seed, then
 Pd Examples
 -----------
 
-Use Electrosmith's petal example in their `pd2dsy` repo.  It works on the terrarium.
+Use Electrosmith's petal example in their `pd2dsy` repo.  It works on the Terrarium.
 
