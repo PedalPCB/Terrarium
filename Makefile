@@ -1,7 +1,7 @@
 
 all:
-	make -C example
+	make -C c
 
 clean:
-	make -C example clean
+	make -C c clean
 
