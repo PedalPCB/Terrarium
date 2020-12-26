@@ -21,3 +21,9 @@ press the reset sequence on the Seed, then
     cd c/distortion
     make program-dfu 
 
+
+Pd Examples
+-----------
+
+Use Electrosmith's petal example in their `pd2dsy` repo.  It works on the terrarium.
+
