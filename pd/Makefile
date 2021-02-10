@@ -1,5 +1,5 @@
 
-TARGETS=sine
+TARGETS=sine chorus passthru
 GEN=../../pd2dsy/pd2dsy.py --board petal
 
 all: $(TARGETS)
