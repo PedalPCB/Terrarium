@@ -1,12 +1,10 @@
+Terrarium
+=========
 Support for programming the PedalPCB Terrarium, with examples from
-PedalPCB forum members @tcpoint and @sonic-explorer.
+PedalPCB forum members @tcpoint, @sonic-explorer and @plate-of-shrimp.
 
-Use of macOS or Linux is assumed.  Using WSL in Windows may work.
-
-
-C Examples
-----------
-
+Examples in C
+-------------
 Clone Electrosmith's `DaisyExamples` repo next to this one and build it according to its instructions.
 This repo will use the resulting `DaisySP` and `libdaisy` libraries.
 
@@ -16,22 +14,36 @@ In this repo,
 
 .bin files will appear in the `build` directory for each example.
 
-To program the Seed with any of the examples, taking for instance 'distortion',
+To program the Seed with any of the examples, let's say `distortion`,
 press the reset sequence on the Seed, then
 
     cd c/distortion
     make program-dfu 
 
 
-Pd Examples
------------
+Examples in Pure Data
+---------------------
+Clone this version of `pd2dsy` beside this repo:
 
-Use Electrosmith's petal example in their `pd2dsy` repo.  It works on the Terrarium.
+    git clone --branch dev https://github.com/rhaleblian/pd2dsy
+
+and set it up according to its README.
+Coming back here, run
+
+    make
+
+to build all the examples. The binaries will be in
+
+    build/{patchname}/build
+
+and installation will look like eg
+
+    cd build/sine/build
+    make program-dfu
 
 
-Max Examples
-------------
-
+Examples in Max
+---------------
 Install Oopsy before opening patches.
 Set the device in the patch to 'petal' and remember to put the Seed into DFU programming mode first.
 
