@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 563.0, 175.0, 640.0, 480.0 ],
+		"rect" : [ 1110.0, 187.0, 583.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,80 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 241.5, 218.885714285714272, 71.0, 20.0 ],
+					"presentation_linecount" : 2,
+					"text" : "volume out"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 241.5, 194.885714285714272, 45.0, 20.0 ],
+					"text" : "D gain"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 241.5, 170.885714285714272, 45.0, 20.0 ],
+					"text" : "B gain"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 241.5, 146.885714285714272, 45.0, 20.0 ],
+					"text" : "G gain"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 241.5, 123.942857142857122, 45.0, 20.0 ],
+					"text" : "E gain"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 241.5, 101.0, 45.0, 20.0 ],
+					"text" : "C gain"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"attr" : "knob6",
 					"id" : "obj-10",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 263.0, 218.885714285714272, 150.0, 22.0 ]
+					"patching_rect" : [ 79.0, 218.885714285714272, 150.0, 22.0 ]
 				}
 
 			}
@@ -58,7 +125,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 263.0, 194.885714285714272, 150.0, 22.0 ]
+					"patching_rect" : [ 79.0, 194.885714285714272, 150.0, 22.0 ]
 				}
 
 			}
@@ -70,7 +137,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 263.0, 170.885714285714272, 150.0, 22.0 ]
+					"patching_rect" : [ 79.0, 170.885714285714272, 150.0, 22.0 ]
 				}
 
 			}
@@ -126,7 +193,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 634.0, 243.0, 150.0, 20.0 ],
+									"patching_rect" : [ 621.0, 230.0, 150.0, 20.0 ],
 									"text" : "cmaj7/9/11"
 								}
 
@@ -207,11 +274,11 @@
 								"box" : 								{
 									"id" : "obj-9",
 									"maxclass" : "newobj",
-									"numinlets" : 2,
+									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 528.5, 442.0, 29.5, 22.0 ],
-									"text" : "+"
+									"patching_rect" : [ 372.5, 412.0, 33.0, 22.0 ],
+									"text" : "* 1/5"
 								}
 
 							}
@@ -222,7 +289,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 147.0, 534.0, 29.5, 22.0 ],
+									"patching_rect" : [ 373.0, 486.0, 29.5, 22.0 ],
 									"text" : "*"
 								}
 
@@ -389,7 +456,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 18.5, 596.0, 69.0, 20.0 ],
+									"patching_rect" : [ 17.5, 546.0, 69.0, 20.0 ],
 									"text" : "OUTPUTS"
 								}
 
@@ -469,7 +536,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 162.5, 593.0, 35.0, 22.0 ],
+									"patching_rect" : [ 388.5, 545.0, 35.0, 22.0 ],
 									"text" : "out 2"
 								}
 
@@ -492,7 +559,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 121.5, 593.0, 35.0, 22.0 ],
+									"patching_rect" : [ 347.5, 545.0, 35.0, 22.0 ],
 									"text" : "out 1"
 								}
 
@@ -673,7 +740,7 @@
 ,
 					"patching_rect" : [ 18.0, 267.0, 137.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"exportfolder" : "macOS:/Users/ray/Documents/Max 8/",
+						"exportfolder" : "macOS:/Users/ray/Developer/terrarium/max/",
 						"exportname" : "oopsy_pod"
 					}
 ,
@@ -720,34 +787,13 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "@loop", 1, "@file", "jongly.aif" ],
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-7",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "demosound.maxpat",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 18.0, 101.0, 225.0, 105.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"attr" : "knob1",
 					"id" : "obj-2",
 					"maxclass" : "attrui",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 263.0, 101.0, 150.0, 22.0 ]
+					"patching_rect" : [ 79.0, 101.0, 150.0, 22.0 ]
 				}
 
 			}
@@ -759,7 +805,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 263.0, 123.942857142857122, 150.0, 22.0 ]
+					"patching_rect" : [ 79.0, 123.942857142857122, 150.0, 22.0 ]
 				}
 
 			}
@@ -771,7 +817,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 263.0, 146.885714285714272, 150.0, 22.0 ]
+					"patching_rect" : [ 79.0, 146.885714285714272, 150.0, 22.0 ]
 				}
 
 			}
@@ -803,7 +849,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 457.5, 101.0, 128.0, 126.0 ],
+					"patching_rect" : [ 365.5, 101.0, 128.0, 126.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -879,18 +925,9 @@
 				}
 
 			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-7", 0 ]
-				}
-
-			}
  ],
 		"parameters" : 		{
 			"obj-11" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-7::obj-21::obj-6" : [ "live.tab[3]", "live.tab[1]", 0 ],
-			"obj-7::obj-35" : [ "[5]", "Level", 0 ],
 			"obj-9::obj-32" : [ "live.text[2]", "FILTER", 0 ],
 			"obj-9::obj-36" : [ "live.menu[1]", "live.menu", 0 ],
 			"obj-9::obj-4" : [ "live.menu[2]", "live.menu", 0 ],
@@ -904,57 +941,21 @@
 		"dependency_cache" : [ 			{
 				"name" : "oopsy.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/oopsy/patchers",
-				"patcherrelativepath" : "./Packages/oopsy/patchers",
+				"patcherrelativepath" : "../../../Documents/Max 8/Packages/oopsy/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "oopsy.snoop.js",
 				"bootpath" : "~/Documents/Max 8/Packages/oopsy/javascript",
-				"patcherrelativepath" : "./Packages/oopsy/javascript",
+				"patcherrelativepath" : "../../../Documents/Max 8/Packages/oopsy/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "oopsy.node4max.js",
 				"bootpath" : "~/Documents/Max 8/Packages/oopsy/javascript",
-				"patcherrelativepath" : "./Packages/oopsy/javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "demosound.maxpat",
-				"bootpath" : "C74:/help/msp",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "sine.svg",
-				"bootpath" : "C74:/media/max/picts/m4l-picts",
-				"type" : "svg",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "saw.svg",
-				"bootpath" : "C74:/media/max/picts/m4l-picts",
-				"type" : "svg",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "square.svg",
-				"bootpath" : "C74:/media/max/picts/m4l-picts",
-				"type" : "svg",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "random.svg",
-				"bootpath" : "C74:/media/max/picts/m4l-picts",
-				"type" : "svg",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "interfacecolor.js",
-				"bootpath" : "C74:/interfaces",
+				"patcherrelativepath" : "../../../Documents/Max 8/Packages/oopsy/javascript",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
