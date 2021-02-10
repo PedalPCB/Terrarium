@@ -6,10 +6,11 @@ PedalPCB forum members @tcpoint, @sonic-explorer and @plate-of-shrimp.
 Examples in C
 -------------
 Clone Electrosmith's `DaisyExamples` repo next to this one and build it according to its instructions.
-This repo will use the resulting `DaisySP` and `libdaisy` libraries.
+We will use the resulting `DaisySP` and `libdaisy` libraries.
 
 In this repo,
 
+    cd c
     make
 
 .bin files will appear in the `build` directory for each example.
@@ -30,6 +31,7 @@ Clone this version of `pd2dsy` beside this repo:
 and set it up according to its README.
 Coming back here, run
 
+    cd pd
     make
 
 to build all the examples. The binaries will be in
@@ -49,3 +51,10 @@ Set the device in the patch to 'petal' and remember to put the Seed into DFU pro
 
 `cmaj.maxpat` is a generator producing an extended Cmaj7 chord. It's a knob tester.
 Knobs 1-5 control gain for each tone and Knob 6 controls master gain.
+
+
+Cleaning Up
+-----------
+    make clean
+
+will remove all `build` dirs.
