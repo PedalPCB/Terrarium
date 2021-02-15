@@ -1,27 +1,35 @@
 HERE=$(dir $(realpath $(firstword $(MAKEFILE_LIST))))
-GEN=../../pd2dsy/pd2dsy.py --board petal
-TARGETS=sine chorus passthru
+CODEGEN=../../pd2dsy/pd2dsy.py --board petal
+TARGETS=amp delay sine chorus passthru
 
 all: $(TARGETS)
 
-amp: build
+
+amp: build/amp/build/amp.bin
+
+build/amp/build/amp.bin: build amp.pd
 	- rm -rf build/$@
-	$(GEN) --out_dir $(HERE)/build/$@ $(HERE)/$@.pd
+	$(CODEGEN) --out_dir $(HERE)/build/$@ $(HERE)/$@.pd
 
 chorus: build
 	- rm -rf build/$@
-	$(GEN) --out_dir $(HERE)/build/$@ $(HERE)/$@.pd
+	$(CODEGEN) --out_dir $(HERE)/build/$@ $(HERE)/$@.pd
+
+delay: build
+	- rm -rf build/$@
+	$(CODEGEN) --out_dir $(HERE)/build/$@ $(HERE)/$@.pd
 
 passthru: build
 	- rm -rf build/$@
-	$(GEN) --out_dir $(HERE)/build/$@ $(HERE)/$@.pd
+	$(CODEGEN) --out_dir $(HERE)/build/$@ $(HERE)/$@.pd
 
 sine: build
 	- rm -rf build/$@
-	$(GEN) --out_dir $(HERE)/build/$@ $(HERE)/$@.pd
-	
+	$(CODEGEN) --out_dir $(HERE)/build/$@ $(HERE)/$@.pd
+
+
 clean:
-	- rm -rf build
+	- rm -rf build amp
 
 build:
 	- mkdir build
