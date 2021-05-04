@@ -24,6 +24,8 @@ press the reset sequence on the Seed, then
 
 Examples in Pure Data
 ---------------------
+Building Pd patches requires Python 2.
+
 Clone this version of `pd2dsy` beside this repo:
 
     git clone --branch dev https://github.com/rhaleblian/pd2dsy
