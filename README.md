@@ -26,6 +26,9 @@ Examples in Pure Data
 ---------------------
 Building Pd patches requires Python 2.
 
+This process has two steps: first generating C code from the Pd patch,
+then compiling the C code and installing the binary.
+
 Clone this version of `pd2dsy` beside this repo:
 
     git clone --branch dev https://github.com/rhaleblian/pd2dsy
@@ -36,11 +39,11 @@ Coming back here, run
     cd pd
     make
 
-to build all the examples. The binaries will be in
+to generate the C code for all the examples. The generated code will be in
 
     build/{patchname}/build
 
-and installation will look like eg
+now build _that_ and push it to the Daisy Seed:
 
     cd build/sine/build
     make program-dfu
