@@ -4,10 +4,7 @@ TARGETS=amp delay sine chorus passthru
 
 all: $(TARGETS)
 
-
-amp: build/amp/build/amp.bin
-
-build/amp/build/amp.bin: build amp.pd
+amp:
 	- rm -rf build/$@
 	$(CODEGEN) --out_dir $(HERE)/build/$@ $(HERE)/$@.pd
 
