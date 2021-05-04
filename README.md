@@ -60,3 +60,11 @@ Cleaning Up
     make clean
 
 will remove all `build` dirs.
+
+
+FAQ
+---
+Q: what does this fork of `pd2dsy` do?
+
+It allows for `pd2dsy` to be run from different directories, so the Pd examples can be stored here.
+
