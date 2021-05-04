@@ -1,0 +1,15 @@
+#N canvas 431 327 450 300 12;
+#X obj 34 95 phasor~ 440;
+#X obj 36 258 dac~ 1 2;
+#X obj 178 106 abs~;
+#X obj 34 132 expr~ $v1 > $v2;
+#X obj 86 168 *~ 0.5;
+#X obj 203 25 r Knob1 @hv_param;
+#X obj 178 69 osc~;
+#X connect 0 0 3 0;
+#X connect 2 0 3 1;
+#X connect 3 0 4 0;
+#X connect 4 0 1 0;
+#X connect 4 0 1 1;
+#X connect 5 0 6 1;
+#X connect 6 0 2 0;
