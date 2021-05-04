@@ -41,7 +41,7 @@ Doesn't alter the signal, just sends input to output.
 
 sine.pd
 -------
-Output 440Hz. No controls?
+Output 440Hz. Knob 6 (lower-right) controls output level.
 
 
 FAQ
