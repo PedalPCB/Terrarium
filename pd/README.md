@@ -6,7 +6,8 @@ Building Pd patches requires Python 2.
 This process has two steps: first generating C code from the Pd patch,
 then compiling the C code and installing the binary.
 
-Clone this version of Electrosmith's `pd2dsy` beside this repo:
+Clone this version of Electrosmith's `pd2dsy` beside this repo
+(Folders "pd2dsy" and "Terrarium" should be next to each other):
 
     git clone --branch dev https://github.com/rhaleblian/pd2dsy
 
