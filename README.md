@@ -48,6 +48,8 @@ now build _that_ and push it to the Daisy Seed:
     cd build/sine/build
     make program-dfu
 
+Remember, put the Seed into DFU programming mode first.
+
 
 Examples in Max
 ---------------
