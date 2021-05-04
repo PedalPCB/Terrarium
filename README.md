@@ -39,11 +39,10 @@ Coming back here, run
     cd pd
     make
 
-to generate the C code for all the examples. The generated code will be in
+to generate the C code for all the examples.
 
-    build/{patchname}/build
-
-now build _that_ and push it to the Daisy Seed:
+Now build the binary from C code and push it to the Daisy Seed.
+For the `sine` example:
 
     cd build/sine/build
     make program-dfu
