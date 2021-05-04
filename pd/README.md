@@ -39,6 +39,10 @@ passthru.pd
 -----------
 Doesn't alter the signal, just sends input to output.
 
+sine.pd
+-------
+Output 440Hz. No controls?
+
 
 FAQ
 ===
