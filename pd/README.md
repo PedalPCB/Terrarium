@@ -26,9 +26,21 @@ For the `sine` example:
 
 Remember, put the Seed into DFU programming mode first.
 
+amp.pd
+------
+A naive amplifier/preamplifier. Knob 1 controls output.
+
+chorus.pd
+---------
+Actually a flanging effect. No controls?
+
+passthru.pd
+-----------
+Doesn't alter the signal, just sends input to output.
+
 
 FAQ
----
+===
 Q: what does this fork of `pd2dsy` do?
 
 It allows for `pd2dsy` to be run from different directories, so the Pd examples can be stored here.
