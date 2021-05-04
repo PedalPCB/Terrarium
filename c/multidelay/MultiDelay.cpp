@@ -118,14 +118,13 @@ int main(void)
     {
         // Update Pass thru
         dsy_gpio_write(&led1, passThruOn ? 0.0f : 1.0f);
-        dsy_system_delay(6);
+        petal.DelayMs(6);
     }
 }
 
 void ProcessControls()
 {
-    petal.UpdateAnalogControls();
-    petal.DebounceControls();
+    petal.ProcessAllControls();
 
     //knobs
     for(int i = 0; i < 3; i++)

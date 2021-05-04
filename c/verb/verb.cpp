@@ -19,7 +19,7 @@ ReverbSc verb;
 void callback(float *in, float *out, size_t size)
 {
     float dryl, dryr, wetl, wetr, sendl, sendr;
-    hw.DebounceControls();
+    hw.ProcessAllControls();
     verb.SetFeedback(vtime.Process());
     verb.SetLpFreq(vfreq.Process());
     vsend.Process(); // Process Send to use later
@@ -70,7 +70,7 @@ int main(void)
     while(1) 
     {
         // Do Stuff InfInitely Here
-        dsy_system_delay(10);
+        hw.DelayMs(10);
         dsy_gpio_write(&led1, bypass ? 0 : 1);
     }
 }

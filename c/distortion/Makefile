@@ -5,8 +5,8 @@ TARGET = distortion
 CPP_SOURCES = distortion.cpp
 
 # Library Locations
-DAISYSP_DIR ?= ../../../DaisyExamples/DaisySP
-LIBDAISY_DIR ?= ../../../DaisyExamples/libdaisy
+DAISYSP_DIR ?= ../../../DaisySP
+LIBDAISY_DIR ?= ../../../libdaisy
 
 # Core location, and generic Makefile.
 # Overwrite LIBDAISY Environment variable to the location of the lib on your machine.

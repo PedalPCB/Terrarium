@@ -17,18 +17,15 @@ Parameter ratio;
 Parameter threshold;
 Parameter makeup;
 
-
 dsy_gpio led1;
 
-// int   drywet;
 bool  bypass;
 bool autogain = false;
 bool last_autogain = false;
 
 void ProcessControls()
 {
-    petal.UpdateAnalogControls();
-    petal.DebounceControls();
+    petal.ProcessAllControls();
 
     //knobs
     float currentAttack = attack.Process();
@@ -113,10 +110,8 @@ static void AudioCallback(float *in, float *out, size_t size)
 
 int main(void)
 {
-    float samplerate;
     petal.Init(); // Initialize hardware (daisy seed, and petal)
-    samplerate = petal.AudioSampleRate();
-    Init(samplerate);
+    Init(petal.AudioSampleRate());
 
     bypass = true;
 
@@ -131,7 +126,7 @@ int main(void)
     while(1)
     {
         dsy_gpio_write(&led1, bypass ? 0.0f : 1.0f);
-        dsy_system_delay(6);
+        petal.DelayMs(6);
     }
 }
 

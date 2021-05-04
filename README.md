@@ -1,30 +1,16 @@
 Terrarium
 =========
-Support for programming the PedalPCB Terrarium, with examples from
-PedalPCB forum members @tcpoint, @sonic-explorer and @plate-of-shrimp.
+Support for programming the PedalPCB Terrarium,
+with examples from PedalPCB forum members
+@tcpoint, @sonic-explorer and @plate-of-shrimp.
 
 Examples in C
 -------------
-Clone Electrosmith's `DaisyExamples` repo next to this one and build it according to its instructions.
-We will use the resulting `DaisySP` and `libdaisy` libraries.
-
-In this repo,
-
-    cd c
-    make
-
-.bin files will appear in the `build` directory for each example.
-
-To program the Seed with any of the examples, let's say `distortion`,
-press the reset sequence on the Seed, then
-
-    cd c/distortion
-    make program-dfu 
+See the README in the c/ directory.
 
 
 Examples in Pure Data
 ---------------------
-
 See the README in the pd/ directory.
 
 

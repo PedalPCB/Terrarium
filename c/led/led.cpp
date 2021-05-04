@@ -34,7 +34,7 @@ int main(void)
     {
         dsy_gpio_toggle(&led1);
         dsy_gpio_toggle(&led2);
-        dsy_system_delay(1000);
+        System::Delay(1000);
     }
 }
 

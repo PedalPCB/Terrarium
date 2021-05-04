@@ -45,8 +45,7 @@ bool bypassHard, bypassSoft;
 
 static void AudioCallback(float **in, float **out, size_t size)
 {
-    petal.UpdateAnalogControls();
-    petal.DebounceControls();
+    petal.ProcessAllControls();
     toneHP.SetFreq(tone_freqHP);
     toneLP.SetFreq(tone_freqLP);
     led1.Update();
