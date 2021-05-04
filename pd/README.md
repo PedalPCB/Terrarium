@@ -1,6 +1,6 @@
 
 Examples in Pure Data
----------------------
+=====================
 Building Pd patches requires Python 2.
 
 This process has two steps: first generating C code from the Pd patch,
