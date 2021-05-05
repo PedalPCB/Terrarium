@@ -1,0 +1,10 @@
+#N canvas 256 503 450 313 12;
+#X obj 225 48 r Knob1 @hv_param;
+#X obj 149 106 *~;
+#X obj 149 48 adc~;
+#X obj 150 164 dac~;
+#X obj 225 80 * 4;
+#X connect 0 0 4 0;
+#X connect 1 0 3 0;
+#X connect 2 0 1 0;
+#X connect 4 0 1 1;

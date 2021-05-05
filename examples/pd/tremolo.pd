@@ -1,0 +1,14 @@
+#N canvas 619 171 514 300 12;
+#X obj 23 21 adc~ 1;
+#X obj 23 189 dac~ 1;
+#X obj 93 76 +~ 1;
+#X obj 93 105 *~ 0.5;
+#X obj 23 132 *~;
+#X obj 93 47 osc~ 2;
+#X text 22 235 http://write.flossmanuals.net/pure-data/amplitude-modulation/
+, f 63;
+#X connect 0 0 4 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 1;
+#X connect 4 0 1 0;
+#X connect 5 0 2 0;
