@@ -1,6 +1,8 @@
 // PedalPCB Terrarium Header
 // Copyright (C) 2020 PedalPCB.com
 // http://www.pedalpcb.com
+#ifndef PEDALPCB_TERRARIUM_H_
+#define PEDALPCB_TERRARIUM_H_
 
 namespace terrarium
 {
@@ -34,3 +36,4 @@ namespace terrarium
 			};
 	};
 }
+#endif
